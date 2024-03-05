@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+  <h1>RANK YOUR EXPERIENCE</h1>
+
+  <div class="rank-container page-container">
+
+    <div class="sidebar">
+        <a href="login.html">Home</a>
+        <a href="search.html">Search A Route</a>
+        <a href="map.html">Map View</a>
+        <a href="star.html">Star Ranking</a>
+        <a href="rank.html" class="active-page">Rank Your Experience</a>
+        <a href="contactus.html" >Contact Us</a>
+    </div>
+
+
+    <!--Potential Stars-->
+      <div class="wrapper">
+        <div class="wrapper">
+     <input type="radio" name="rate" id="rate1">
+     <label for="rate1"></label>
+     <input type="radio" name="rate" id="rate2">
+     <label for="rate2"></label>
+     <input type="radio" name="rate" id="rate3">
+     <label for="rate3"></label>
+     <input type="radio" name="rate" id="rate4">
+     <label for="rate4"></label>
+     <input type="radio" name="rate" id="rate5">
+     <label for="rate5"></label>
+    </div>
+      </div>
+
+
+
+    <!-- Fill in review-->
+    <h2 id="fh2">WE APPRECIATE YOUR REVIEWS AND RANKING!</h2>
+    <h6 id="fh6">Your review and ranking will help our community have the best riding experiences!</h6>
+
+
+    <form id="feedback" onsubmit="return mySubmitFunction(event)">
+      <div class="pinfo">Fill in the details</div>
+
+
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fas fa-location-arrow"></i></span>
+         <select class="form-control" id="location">
+        <option value="hide">-- Location --</option>
+        <option value="A">Afula</option>
+        <option value="B">Beer Sheva</option>
+        <option value="C">Carmiel</option>
+        <option value="D">Dimona</option>
+        <option value="G">Gedera</option>
+        <option value="H">Hadera</option>
+        <option value="J">Jerusalem</option>
+        <option value="L">Lod</option>
+        <option value="M">Modiin</option>
+        <option value="N">Netanya</option>
+        <option value="O">Or Yehuda</option>
+        <option value="P">Pardesiya</option>
+        <option value="T">Tel Aviv</option>
+        <option value="R">Rehovot</option>
+        <option value="R1">Ramat Gan</option>
+        <option value="Z">Zicron Yaakov</option>
+        <option value="Y">Yehud</option>
+    </select>         </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fas fa-biking"></i></span>
+      <select class="form-control" id="TypeOfCycling">
+        <option value="hide">-- What Road Did You Ride? --</option>
+        <option value="Ramon Valley">Ramon Valley</option>
+        <option value="Ein Akev">Ein Akev</option>
+        <option value="Negev Downhill">Negev Downhill</option>
+        <option value="Mount Hermon">Mount Hermon</option>
+
+      </select>
+        </div>
+      </div>
+    </div>
+
+     <div class="pinfo">How many stars would you give to your riding experience?</div>
+
+
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-heart"></i></span>
+       <select class="form-control" id="rate">
+          <option value="1star">1</option>
+          <option value="2stars">2</option>
+          <option value="3stars">3</option>
+          <option value="4stars">4</option>
+          <option value="5stars">5</option>
+        </select>
+        </div>
+      </div>
+    </div>
+
+     <div class="pinfo">Write a review</div>
+
+
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+      <textarea placeholder="Wirte Your Review Here" class="form-control" id="review" rows="3" ></textarea>
+
+        </div>
+      </div>
+    </div>
+
+     <button type="submit" class="btn btn-primary">Send</button>
+
+
+    </form>
+  </div>
+    </body>
+    </html>
+
+    <div class="footer">
+    <p>Contact Us. Email: thebestroute@gmail.com . Facebook: The Best Route . Phone: 083214765</p>
+    </div>
+
+  </div>
+
+  <script src="../static/rank.js"></script>
+  <script src="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

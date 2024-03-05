@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+   <div class="contactus-container page-container">
+
+    <div class="sidebar">
+        <a href="login.html">Home</a>
+        <a href="search.html">Search A Route</a>
+        <a href="map.html">Map View</a>
+        <a href="star.html">Star Ranking</a>
+        <a href="rank.html" >Rank Your Experience</a>
+        <a href="contactus.html" class="active-page">Contact Us</a>
+    </div>
+    <form id="contactus" action="#" method="post">
+      <div class="pinfo" >Fill in the details </div>
+        <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <input name="name" placeholder="Full Name" id="fullName" class="form-control" type="text" required>
+        <div id="fullNameError" class="error"></div>
+        </div>
+        </div>
+          </div>
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+            <input type="email" placeholder="example@mail.com" id="email" class="form-control" name="email" required>
+        <div id="emailError" class="error"></div>
+        </div>
+          </div>
+        </div>
+        <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+            <input type="tel" id="phone" name="phone"  placeholder="Format: 050-1234567">
+        <div id="phoneError" class="error"></div>
+        </div>
+        </div>
+          </div>
+        <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+      <textarea class="form-control" placeholder="Write Your Message" id="message" rows="3" name="message" required></textarea>
+        <div id="messageError" class="error"></div>
+        </div>
+      </div>
+          </div>
+        <button type="submit" onclick="sendForm(event)" class="btn btn-primary">Send</button>
+    </form>
+</div>
+  </div>
+</body>
+</html>
+<div class="footer">
+    <p>Contact Us. Email: thebestroute@gmail.com . Facebook: The Best Route . Phone: 083214765</p>
+    </div>
+
+<script src="../static/contactus.js"></script>
+
+

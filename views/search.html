@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+
+<h1>CHOOSE YOUR ROUTE</h1>
+
+<!-- Sidebar -->
+<div class="riding-container page-container">
+    <div class="sidebar">
+        <a href="login.html">Home</a>
+        <a href="search.html" class="active-page">Search A Route</a>
+        <a href="map.html">Map View</a>
+        <a href="star.html">Star Ranking</a>
+        <a href="rank.html">Rank Your Experience</a>
+        <a href="contactus.html" >Contact Us</a>
+    </div>
+    <form id="searchForm" action="#" method="post"> <!-- Added an id to the form for validation -->
+        <label class="TypeOfCycling-label" for="TypeOfCycling">Choose Category:</label>
+        <select id="TypeOfCycling" name="TypeOfCycling" required> <!-- Added name attribute for form submission and required attribute for validation -->
+            <option value="hide">-- What type of cycling? --</option>
+            <option value="Road">Road</option>
+            <option value="Gravel">Gravel</option>
+            <option value="Mountain">Mountain</option>
+            <option value="Downhill">Downhill</option>
+            <option value="Enduro">Enduro</option>
+        </select>
+<br>
+ <br>
+
+ <br>
+
+
+        <label class="Location-label" for="Location">Where Will You Ride?:</label> <!-- Fixed label placement -->
+        <select id="Location" name="Location" required> <!-- Added name attribute for form submission and required attribute for validation -->
+            <option value="hide">-- Location --</option>
+            <option value="A">Afula</option>
+            <option value="B">Beer Sheva</option>
+            <option value="C">Carmiel</option>
+            <option value="D">Dimona</option>
+            <option value="G">Gedera</option>
+            <option value="H">Hadera</option>
+            <option value="J">Jerusalem</option>
+            <option value="L">Lod</option>
+            <option value="M">Modiin</option>
+            <option value="N">Netanya</option>
+            <option value="O">Or Yehuda</option>
+            <option value="P">Pardesiya</option>
+            <option value="T">Tel Aviv</option>
+            <option value="R">Rehovot</option>
+            <option value="R1">Ramat Gan</option>
+            <option value="Z">Zicron Yaakov</option>
+            <option value="Y">Yehud</option>
+        </select>
+        <br>
+         <br>
+        <br>
+        <button type="submit" class="choose-btn">Choose</button> <!-- Changed button type to submit for form submission -->
+
+
+    </form>
+        <h2 class="listTitle">Our Community's favorites</h2>
+    <ul class="list">
+            <li class="list-item one">Mount Hermon</li>
+            <li class="list-item two">Ramon Valley</li>
+            <li class="list-item three">Ein Akev</li>
+            <li class="list-item four">Negev Downhill</li>
+        </ul>
+     <br>
+     <br>
+     <br>
+    <div class="footer">
+        <p>Contact Us. Email: thebestroute@gmail.com . Facebook: The Best Route . Phone: 083214765 </p>
+    </div>
+</div>
+
+</body>
+</html>
+    <script src="../static/search.js"></script> <!-- Linking the JavaScript file -->

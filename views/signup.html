@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+
+<h1>THE BEST ROUTE</h1>
+<p>Welcome To Our Community! We Are Happy To Have You Around</p>
+
+<div class="signup-container page-container">
+    <div class="sidebar">
+        <a href="login.html">Home</a>
+        <a href="search.html">Search A Route</a>
+        <a href="map.html">Map View</a>
+        <a href="star.html">Star Ranking</a>
+        <a href="rank.html">Rank Your Experience</a>
+        <a href="contactus.html" >Contact Us</a>
+    </div>
+    
+    <!-- Sign Up Form -->
+    <form class="signup-form">
+        <!-- Headings for the form -->
+        <div class="headingscontainer">
+             <h3>Sign Up</h3>
+             </p>
+        </div>
+
+        <!--Main container for all the inputs -->
+        <div class="Signup-MainContainer">
+    
+            <div>
+                <!-- Username -->
+                <label for="Username">Username</label>
+                <input type="text" placeholder="Enter Username" name="Username" id="username" required>
+            </div>
+    
+            <div>
+                <!-- Password -->
+                <label for="Password">Password</label>
+                <input  type="Password" placeholder="Enter Password" name="Password" id="password" required>
+            </div>
+    
+            <div>
+                <!-- Email -->
+                <label for="Email">Email</label>
+                <input  type="Email" placeholder="Enter Email" name="Email" id="email" required>
+            </div>
+    
+            <div>
+                <!-- Age -->
+                <label for="BirthDate">Birthdate</label>
+                <input  type="date" placeholder="Enter Birth Date" name="BirthDate" id="BirthDate" required>
+            </div>
+    
+            <div>
+                <!-- Phone -->
+                <label for="Phone">Phone</label>
+                <input  type="Phone" placeholder="Enter Phone" name="Phone" id="phone" required>
+            </div>
+
+             <div>
+                <!-- Bike -->
+                <label for="bike">Bike</label>
+                <input  type="bike" placeholder="My Bike Model (optional)" name="bike" id="bike" >
+            </div>
+    
+        </div>
+    
+        <div class="submit-btn-container">
+            <button class="submit" onclick="register(event)">Register</button>
+        </div>
+    
+    </form>
+    
+    <div class="Coupon">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="alert alert-coupon">
+                    <h4>Special Offer for our new members!</h4>
+                    <p>If you sign up now, you are eligble for a 20% discount at rosen&mints!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Contact Us. Email: thebestroute@gmail.com . Facebook: The Best Route . Phone: 083214765 </p>
+    </div>
+</div>
+
+
+<script src="../static/signup.js"></script>
+
+
+</body>
+</html>
